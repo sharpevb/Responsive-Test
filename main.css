@@ -1,3 +1,46 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/* NavBar */
+.navbar {
+  background-color: rgb(223, 11, 39);
+}
+.linkBox {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(63, 62, 62);
+  margin-left: -8px;
+}
+.searchForm {
+  margin: 0 auto;
+  background-color: rgb(179, 15, 37);
+}
+#searchBar {
+  border-radius: 0;
+  width: 400px;
+  background-color: rgb(179, 15, 37);
+  border-color: rgb(179, 15, 37);
+}
+#searchIcon {
+  padding-right: 10px;
+  height: 25px;
+}
+.colorBar {
+  height: 35px;
+  width: 100%;
+  background-color: rgb(179, 15, 37);
+}
+
+/* Banner */
+#banner {
+  border-radius: 0;
+  background-image: url("images/B&W_bg.jpg");
+  background-position: 25% 75%;
+  background-size: cover;
+  height: 250px;
+  box-shadow: inset 300px 0 100px black;
+}
+#promotion {
+  color: white;
+}
