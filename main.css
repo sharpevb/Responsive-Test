@@ -11,7 +11,7 @@ body {
 .linkBox {
   height: 30px;
   width: 150px;
-  background-color: rgb(63, 62, 62);
+  background-color: rgb(46, 45, 45);
   margin-left: -8px;
 }
 .searchForm {
@@ -104,3 +104,23 @@ h4 {
 }
 
 /* Footer */
+.footer {
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: rgb(46, 45, 45);
+}
+#footerText {
+  padding: 45px 0;
+}
+li, h5 {
+  font-size: 9pt;
+  font-weight: 300;
+  list-style-type: none;
+  color: white;
+}
+#footerTitle {
+  font-size: 13pt;
+  font-weight: 500;
+}
