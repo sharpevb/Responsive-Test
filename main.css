@@ -5,29 +5,30 @@ body {
 
 /* NavBar */
 .navbar {
+  height: 45px;  
+  width: 100%;
   background-color: rgb(223, 11, 39);
-  height: 45px;
 }
 .linkBox {
   height: 30px;
   width: 150px;
+  margin-left: -8px;  
   background-color: rgb(46, 45, 45);
-  margin-left: -8px;
 }
 .searchForm {
   margin: 0 auto;
   background-color: rgb(179, 15, 37);
 }
 #searchBar {
-  border-radius: 0;
-  width: 400px;
+  height: 30px;  
+  width: 400px;  
   background-color: rgb(179, 15, 37);
   border-color: rgb(179, 15, 37);
-  height: 30px;
+  border-radius: 0;
 }
 #searchIcon {
+  height: 20px;  
   padding-right: 10px;
-  height: 20px;
 }
 .colorBar {
   height: 30px;
@@ -37,22 +38,22 @@ body {
 
 /* Banner */
 #banner {
-  border-radius: 0;
+  height: 250px;  
   background-image: url("images/B&W_bg.jpg");
   background-position: 25% 75%;
   background-size: cover;
-  height: 250px;
   box-shadow: inset 300px 0 100px black;
+  border-radius: 0;  
 }
 #promotion {
+  width: 50%;  
+  margin-top: -30px;  
+  float: left;  
   color: white;
-  margin-top: -30px;
-  width: 50%;
-  float: left;
 }
 h1 {
+  margin-bottom: -5px;  
   font-weight: 700;
-  margin-bottom: -5px;
 }
 h4 {
   font-weight: 100;
@@ -69,29 +70,29 @@ h4 {
   margin-top: -50px;
 }
 
-/* Color swatches */
+/* Color Swatches */
 .container-fluid {
   margin-top: -90px;
 }
-.row {
-  display: flex;
+#colors {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
+  display: flex;
 }
 .col {
   height: 140px;
   width: 30%;
   margin-left: 25px;
-  border: 10px white solid;
-  border-radius: 3px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 10px white solid;
+  border-radius: 3px;  
 }
 #hexCode {
-  color: white;
   font-size: 16pt;
-  font-weight: 100;
-  text-align: center;
-  padding: 44px 0;
+  font-weight: 100;  
+  padding: 44px 0;  
+  text-align: center;  
+  color: white;
 }
 #c1 {
   background-color: #35D3B4;
@@ -105,22 +106,148 @@ h4 {
 
 /* Footer */
 .footer {
-  height: 150px;
-  width: 100%;
+  height: 175px;
+  width: 99%;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   background-color: rgb(46, 45, 45);
 }
 #footerText {
-  padding: 45px 0;
+  padding: 60px 0;
 }
 li, h5 {
+  font-weight: 300;  
   font-size: 9pt;
-  font-weight: 300;
   list-style-type: none;
   color: white;
 }
 #footerTitle {
+  font-weight: 500;  
   font-size: 13pt;
-  font-weight: 500;
+}
+
+
+/* Tablet Size (400-1024px) */
+@media screen and (max-width: 1024px) {
+  /* NavBar */
+  .linkBox {
+    width: 20%;
+  }
+  .searchForm {
+    height: 32px;
+  }
+  #searchBar {
+    height: 30px;
+    width: 300px;
+    margin-top: -6px;
+  }
+  #searchIcon {
+    margin-top: -10px;
+  }
+  .colorBar {
+    height: 25px;
+  }
+
+  /* Banner */
+  #banner {
+    /* transform: scale(1.1); */
+    background-position: center 60%;
+    box-shadow: inset 200px 20px 100px black;
+  }
+  #peakPNG {
+    width: 250px;
+    margin-top: 60px;
+  }
+  
+  /* Color Swatches */
+  .col {
+    height: 120px;
+    width: 200px;
+  }
+  #hexCode {
+    padding: 35px 0;
+  }
+
+  /* Footer */
+  .footer {
+    height: 100px;
+  }
+  #footerText {
+    height: 100px;
+    width: 100%;
+    margin-top: -30px;
+    margin-left: -40px;
+  }
+  #footerTitle {
+    font-size: 10pt;
+  }
+  li {
+    font-size: 7pt;
+  }
+}
+
+/* Mobile Size (360px) */
+@media screen and (max-width: 360px) {
+  /* NavBar */
+  .navbar {
+    height: 50px;
+  }
+  .linkBox {
+    width: 10%;
+  }
+   .searchForm {
+    height: 32px;
+    width: 85%;
+  }
+  #searchIcon {
+    /* display: none; */
+    border: yellow 1px solid;
+  }
+  
+  /* Banner */
+  #banner {
+    height: 350px;
+  }
+  #promotion {
+    padding-top: 20px;
+  }
+  h1 {
+    font-size: 15pt;
+  }
+  h4 {
+    font-size: 12pt;
+    padding-top: 5px;
+  }
+  #promoDes {
+    font-size: 8pt;
+    width: 100%;
+  }
+  #peakPNG {
+    margin-top: -10px;
+  }
+
+  /* Color Swatches */
+  #c1, #c2, #c3 {
+    height: 50px;
+
+  }
+
+  /* Footer */
+  .footer {
+    height: 155px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin-top: 60px;
+  }
+  #footerText {
+    height: 100px;
+    width: 100%;
+    margin-top: -20px;
+    border: tomato solid 1px;
+  }
+
+  #footerTitle {
+    margin-top: -20px;
+  }
 }
